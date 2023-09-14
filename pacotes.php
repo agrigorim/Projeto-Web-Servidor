@@ -1,61 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Viagens360</title>
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<?php require_once __DIR__ . '/cabecalho1.php'; ?>
         <!-- Bootstrap -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-         <!-- Font Awesome Icons -->
-        <script src="https://kit.fontawesome.com/6bb1eca144.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container-fluid header">
-                <div class="d-flex flex-wrap align-items-center justify-content-center p-3">
-                    <div class="d-flex align-items-center mb-3 mt-3 me-md-auto">
-                        <img src="/img/logo.png" id="imgLogo"/>
-                    </div>
-                    <!-- <ul class="nav col-12 col-md-auto mb-2 justify-content-center">
-                        <li><a href=""></a><img src="/img/rss.png" /></li>
-                        <li><a href=""></a><img src="/img/linkedin.png" /></li>
-                        <li><a href=""></a><img src="/img/face.png" /></li>
-                    </ul> -->
+<?php require_once __DIR__ . '/cabecalho2.php'; ?>
                     <ul class="d-flex justify-content-center nav col-12 col-md-auto ms-4 mb-2 me-lg-3 mb-lg-0 text-uppercase">
                         <li><a class="nav-link px-1 px-md-2 text-light" href="index.html">Inicio</a></li>
                         <li><a class="nav-link px-1 px-md-2 linkAtivo disabled" href="#">Pacotes</a></li>
                     </ul>
-                    <div class="d-flex col-3 col-md-auto justify-content-center">
-                        <div class="dropdown justify-content-center me-md-3 mb-md-0 mb-2 ">
-                            <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="fa fa-user"></i></button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" id="register" href="registro.html">Registro</a></li>
-                                <li><a class="dropdown-item d-none" id="logout" href="#" onclick="logout();">Sair</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex col-md-auto justify-content-center d-none" id="cart">
-                        <div class="me-md-3 mb-md-0 mb-2">
-                            <a href="carrinho.html">
-                                <button type="button" class="btn btn-danger position-relative">
-                                    <i class="fa-solid fa-cart-shopping text-light"></i>
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark" id="cartCount">0</span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input placeholder="Buscar" type="search" class="form-control" />
-                    </form>
-                    
-                </div>
-            </div>
-        </header>
+<?php require_once __DIR__ . '/cabecalho3.php'; ?>
         <div class="d-flex col-12 position-static justify-content-center">
             <img alt="Pacotes Viagens360" class="d-block img-fluid" src="img/products/banner_package.png">
         </div>
@@ -98,7 +49,6 @@
                 </div>
             </div>
         </div>
-
         <footer class="footer">
             <div class="footer container-fluid py-5">
                 <div class="row justify-content-center">
