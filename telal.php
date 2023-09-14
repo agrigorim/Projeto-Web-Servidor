@@ -33,7 +33,7 @@ session_start();
             <div class="container">
                 <div class="card mx-3 mt-n5 shadow-lg" style="border-radius: 10px; border-left:8px #fbb03b solid">
                     <div class="card-body">
-                        <form action="login.php" method="post" id="formLogin">
+                        <form action="#" method="post" id="formLogin">
                             <div class="row mt-md-4 justify-content-center">
                                 <div class="d-flex col-12 col-md-4 justify-content-center mt-5 mt-md-0">
                                     <div class="input-group">
