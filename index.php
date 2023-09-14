@@ -1,21 +1,22 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
-        <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Viagens360</title>
-                <link rel="stylesheet" type="text/css" href="/css/main.css">
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-                <!-- Bootstrap -->
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-                <!-- Font Awesome Icons -->
-                <script src="https://kit.fontawesome.com/6bb1eca144.js" crossorigin="anonymous"></script>
-        </head>
-        <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viagens360</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/6bb1eca144.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
         <header>
             <div class="container-fluid header">
                 <div class="d-flex flex-wrap align-items-center justify-content-center p-3">
@@ -29,20 +30,21 @@
                     </ul> -->
                     <ul class="d-flex justify-content-center nav col-12 col-md-auto ms-4 mb-2 me-lg-3 mb-lg-0 text-uppercase">
                         <li><a class="nav-link px-1 px-md-2 linkAtivo disabled" href="">Inicio</a></li>
-                        <li><a class="nav-link px-1 px-md-2 text-light" href="pacotes.html">Pacotes</a></li>
+                        <li><a class="nav-link px-1 px-md-2 text-light" href="pacotes.php">Pacotes</a></li>
                     </ul>
                     <div class="d-flex col-3 col-md-auto justify-content-center">
                         <div class="dropdown justify-content-center me-md-3 mb-md-0 mb-2 ">
                             <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"><i class="fa fa-user"></i></button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" id="register" href="registro.html">Registro</a></li>
+                                <li><a class="dropdown-item" id="register" href="registro.php">Registro</a></li>
+                                <li><a class="dropdown-item" id="login" href="telaS.php">Login</a></li>
                                 <li><a class="dropdown-item d-none" id="logout" href="#" onclick="logout();">Sair</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="d-flex col-md-auto justify-content-center d-none" id="cart">
                         <div class="me-md-3 mb-md-0 mb-2">
-                            <a href="carrinho.html">
+                            <a href="carrinho.php">
                                 <button type="button" class="btn btn-danger position-relative">
                                     <i class="fa-solid fa-cart-shopping text-light"></i>
                                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark" id="cartCount">0</span>
@@ -195,7 +197,9 @@
                 </div>
             </div>
         </div>
-        <div class="footer container-fluid py-5">
+
+        <footer class="footer">
+            <div class="footer container-fluid py-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-3 mb-3">
                         <h3 class="text-uppercase fw-bold text-center">Presente Em</h3>
@@ -230,10 +234,11 @@
                 </div>
             </div>
         </footer>
+
         <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
         <script type="text/javascript" src="js/jquery.mask.js"></script>
         <script type="text/javascript" src="js/jquery.mask.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/session.js"></script>
     </body>
-</html>       
+</html>
